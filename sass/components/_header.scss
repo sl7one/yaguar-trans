@@ -1,0 +1,133 @@
+.header {
+  &__top {
+    background-color: var(--secondaryAccent);
+    padding: 14px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    color: white;
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  &__address {
+    font-style: normal;
+    a {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      transition: var(--transition);
+
+      &:hover {
+        color: var(--mainAccent);
+      }
+    }
+  }
+
+  &__top-right-wrap {
+    display: flex;
+    align-items: center;
+    gap: 56px;
+
+    .social-links {
+      display: flex;
+      gap: 8px;
+
+      a {
+        transition: var(--transition);
+        &:hover {
+          color: var(--mainAccent);
+        }
+      }
+    }
+
+    .button {
+      background-color: var(--mainWhite);
+      color: var(--secondaryAccent);
+    }
+  }
+
+  &__button {
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 13px;
+    padding: 10px 14px;
+    background-color: var(--mainWhite);
+    transition: var(--transition);
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__logo {
+    transition: var(--transition);
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 0;
+
+    .header__button {
+      background-color: var(--mainAccent);
+    }
+  }
+
+  &__bottom-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  &__bottom-nav {
+    display: flex;
+    gap: 40px;
+    text-transform: uppercase;
+  }
+}
+
+.lang-switcher {
+  display: flex;
+  text-transform: uppercase;
+
+  li {
+    &:first-of-type {
+      &::after {
+        content: '/';
+        margin: 0 3px;
+      }
+    }
+
+    a {
+      transition: var(--transition);
+      &:hover {
+        color: var(--mainAccent);
+      }
+    }
+  }
+}
+
+.menu-item {
+  a {
+    padding: 34px 0;
+    transition: var(--transition);
+
+    &:hover {
+      color: var(--mainAccent);
+    }
+  }
+}
