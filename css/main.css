@@ -222,7 +222,7 @@ button {
 }
 
 .hero {
-  background-image: url("./../../assets/hero-bg.jpg");
+  background-image: url(../../assets/hero-bg.jpg);
   background-size: cover;
   height: 625px;
 }
