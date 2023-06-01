@@ -1,0 +1,9 @@
+.container {
+  // min-width: 320px;
+  max-width: 480px;
+  margin: 0 auto;
+
+  @include desktop {
+    max-width: 1280px;
+  }
+}

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jaguar auto-trans</title>
     <link rel="stylesheet" href="css/icons.css" />
-    <link rel="stylesheet" href="css/main.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
   </head>
@@ -66,61 +66,57 @@
         </div>
       </div>
     </header>
-    <!-- <header class="header-mobile">
-      <div class="header__top">
+
+    <header class="header-mobile container">
+      <a href="#" class="header-mobile__logo"><img src="./assets/jaguar-logo.svg" alt="logo" /></a>
+      <button class="burger-btn" type="button">
+        <div class="burger-btn__line --top"></div>
+        <div class="burger-btn__line --mid"></div>
+        <div class="burger-btn__line --bot"></div>
+      </button>
+    </header>
+
+    <div class="header-mobile__menu">
+      <nav>
+        <ul class="header-mobile__nav">
+          <li class="menu-item">
+            <a href="#" data="route"> Маршрути </a>
+          </li>
+          <li class="menu-item">
+            <a href="#"> Автопарк </a>
+          </li>
+          <li class="menu-item">
+            <a href="#"> Послуги </a>
+          </li>
+          <li class="menu-item">
+            <a href="#"> Вартість квитків </a>
+          </li>
+          <li class="menu-item">
+            <a href="#"> Контакти </a>
+          </li>
+        </ul>
+      </nav>
+      <button type="button" class="header__button">
+        Замовити квиток
+        <div class="icon-arrow-btn"></div>
+      </button>
+      <ul class="social-links">
+        <li><a href="#" class="icon-fb"></a></li>
+        <li><a href="#" class="icon-insta"></a></li>
+        <li><a href="#" class="icon-telegram"></a></li>
+        <li><a href="#" class="icon-whatsapp"></a></li>
+      </ul>
+      <div class="header-mobile__footer">
         <div class="container">
-          <address class="header__address">
-            <a href="#">
-              <div class="icon-gps"></div>
-              01014, Україна, м. Київ, вул. Миколи Соловцова, буд.2</a
-            >
-          </address>
-          <div class="header__top-right-wrap">
-            <ul class="social-links">
-              <li><a href="#" class="icon-fb"></a></li>
-              <li><a href="#" class="icon-insta"></a></li>
-              <li><a href="#" class="icon-telegram"></a></li>
-              <li><a href="#" class="icon-whatsapp"></a></li>
-            </ul>
-            <button class="header__button" type="button">+380 97 244 11 30</button>
-            <ul class="lang-switcher">
-              <li class="lang-item current-lang"><a href="#">Рус</a></li>
-              <li class="lang-item current-lang"><a href="#">Укр</a></li>
-            </ul>
-          </div>
+          <ul class="lang-switcher">
+            <li class="lang-item current-lang"><a href="#">Рус</a></li>
+            <li class="lang-item current-lang"><a href="#">Укр</a></li>
+          </ul>
+          <button class="header__button" type="button">+380 97 244 11 30</button>
         </div>
       </div>
-      <div class="container">
-        <div class="header__bottom">
-          <a href="#" class="header__logo"><img src="/assets/jaguar-logo.svg" alt="logo" /></a>
-          <div class="header__bottom-wrapper">
-            <nav>
-              <ul class="header__bottom-nav">
-                <li class="menu-item">
-                  <a href="#" data="route"> Маршрути </a>
-                </li>
-                <li class="menu-item">
-                  <a href="#"> Автопарк </a>
-                </li>
-                <li class="menu-item">
-                  <a href="#"> Послуги </a>
-                </li>
-                <li class="menu-item">
-                  <a href="#"> Вартість квитків </a>
-                </li>
-                <li class="menu-item">
-                  <a href="#"> Контакти </a>
-                </li>
-              </ul>
-            </nav>
-            <button type="button" class="header__button">
-              Замовити квиток
-              <div class="icon-arrow-btn"></div>
-            </button>
-          </div>
-        </div>
-      </div>
-    </header> -->
+    </div>
+
     <main>
       <section class="hero">
         <div class="container">

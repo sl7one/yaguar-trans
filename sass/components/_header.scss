@@ -1,10 +1,102 @@
+.header-mobile {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  position: relative;
+  z-index: 12;
+
+  @include desktop {
+    display: none;
+  }
+
+  &__logo {
+    img {
+      width: 125px;
+    }
+  }
+
+  .burger-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    width: 35px;
+    background-color: transparent;
+
+    &__line {
+      height: 2px;
+      width: 100%;
+      border-radius: 3px;
+      background-color: black;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding-top: 50px;
+    background-color: var(--mainWhite);
+    width: 100vw;
+    height: calc(100vh - 75px);
+    opacity: 0;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-110%);
+    z-index: 11;
+
+    .social-links {
+      color: var(--secondaryAccent);
+    }
+
+    .header__button {
+      color: var(--mainWhite);
+      background-color: var(--mainAccent);
+    }
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  &__footer {
+    width: 100%;
+    background-color: var(--secondaryAccent);
+
+    .container {
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .lang-switcher {
+      color: var(--mainWhite);
+    }
+
+    .header__button {
+      background-color: var(--mainWhite);
+      color: var(--secondaryAccent);
+    }
+  }
+}
+
 .header {
+  display: none;
+
+  @include desktop {
+    display: block;
+  }
+
   &__top {
     background-color: var(--secondaryAccent);
     padding: 14px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 
     color: white;
 
@@ -12,6 +104,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      width: 100%;
     }
   }
 
@@ -33,18 +126,6 @@
     display: flex;
     align-items: center;
     gap: 56px;
-
-    .social-links {
-      display: flex;
-      gap: 8px;
-
-      a {
-        transition: var(--transition);
-        &:hover {
-          color: var(--mainAccent);
-        }
-      }
-    }
 
     .button {
       background-color: var(--mainWhite);
@@ -126,6 +207,18 @@
     padding: 34px 0;
     transition: var(--transition);
 
+    &:hover {
+      color: var(--mainAccent);
+    }
+  }
+}
+
+.social-links {
+  display: flex;
+  gap: 8px;
+
+  a {
+    transition: var(--transition);
     &:hover {
       color: var(--mainAccent);
     }

@@ -6,4 +6,11 @@
   &__wrapper {
     display: flex;
   }
+
+  &__img {
+    display: none;
+    @include desktop {
+      display: block;
+    }
+  }
 }
