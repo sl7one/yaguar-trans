@@ -5,6 +5,7 @@
     background-color: transparent;
     margin-top: 22px;
     transform: rotate(-135deg);
+    display: inline-block;
 
     .icon-arrow-btn::before {
       transition: var(--transition);

@@ -465,6 +465,7 @@ button {
   background-color: transparent;
   margin-top: 22px;
   transform: rotate(-135deg);
+  display: inline-block;
 }
 .routes-mobile .back-button .icon-arrow-btn::before {
   transition: var(--transition);
