@@ -344,7 +344,7 @@ button {
 @media screen and (min-width: 1280px) {
   .hero__img {
     display: block;
-    transform: translateY(-110px);
+    transform: translateY(120px);
   }
 }
 .hero__slider-header {
