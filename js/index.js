@@ -3,7 +3,11 @@ const ref = {
   dropDown: document.querySelector('.dropdown'),
   burgerBtn: document.querySelector('.burger-btn'),
   burgerMenu: document.querySelector('.header-mobile__menu'),
+  bottomHeader: document.querySelector('.header__bottom'),
 };
+
+const { bottom } = ref.bottomHeader.getBoundingClientRect();
+ref.dropDown.style.top = bottom + 'px';
 
 const onHover = () => {
   ref.dropDown.style.opacity = 1;

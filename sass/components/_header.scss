@@ -50,12 +50,26 @@
     z-index: 11;
 
     .social-links {
-      color: var(--secondaryAccent);
+      gap: 16px;
+
+      a {
+        transition: var(--transition);
+        color: var(--secondaryAccent);
+        &:hover {
+          color: var(--mainAccent);
+        }
+      }
     }
 
     .header__button {
       color: var(--mainWhite);
       background-color: var(--mainAccent);
+      gap: 11px;
+      font-weight: 500;
+      line-height: 1.2;
+      div::before {
+        font-size: 14px;
+      }
     }
   }
 
@@ -64,6 +78,10 @@
     flex-direction: column;
     align-items: center;
     gap: 40px;
+
+    a {
+      text-transform: uppercase;
+    }
   }
 
   &__footer {
@@ -96,7 +114,7 @@
 
   &__top {
     background-color: var(--secondaryAccent);
-    padding: 14px 0;
+    padding: 10px 0;
 
     color: white;
 
@@ -105,6 +123,11 @@
       align-items: center;
       justify-content: space-between;
       width: 100%;
+    }
+
+    .header__button {
+      color: var(--secondaryAccent);
+      font-weight: 500;
     }
   }
 
@@ -141,7 +164,13 @@
     gap: 13px;
     padding: 10px 14px;
     background-color: var(--mainWhite);
+    color: var(--mainWhite);
     transition: var(--transition);
+    font-weight: 500;
+
+    div::before {
+      font-size: 14px;
+    }
 
     &:hover {
       transform: scale(1.1);
@@ -215,12 +244,23 @@
 
 .social-links {
   display: flex;
-  gap: 8px;
+  gap: 16px;
 
   a {
     transition: var(--transition);
     &:hover {
       color: var(--mainAccent);
     }
+  }
+}
+
+.current-lang {
+  font-weight: 700;
+}
+
+.current-page {
+  a {
+    color: var(--mainAccent);
+    font-weight: 700;
   }
 }

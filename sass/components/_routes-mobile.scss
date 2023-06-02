@@ -1,0 +1,51 @@
+.routes-mobile {
+  padding-left: 70px;
+
+  .back-button {
+    background-color: transparent;
+    margin-top: 22px;
+    transform: rotate(-135deg);
+
+    .icon-arrow-btn::before {
+      transition: var(--transition);
+      font-size: 16px;
+    }
+
+    &:hover .icon-arrow-btn {
+      color: var(--mainAccent);
+    }
+  }
+
+  &__header {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: var(--secondaryAccent);
+    text-transform: uppercase;
+  }
+
+  &__first {
+    margin-top: 20px;
+  }
+
+  &__second {
+    margin-top: 30px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 16px;
+  }
+
+  &__item {
+    transition: var(--transition);
+    opacity: 0;
+
+    &:hover {
+      color: var(--secondaryAccent);
+      text-decoration: underline;
+    }
+  }
+}
