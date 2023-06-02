@@ -339,11 +339,12 @@ button {
 }
 .hero__img {
   display: none;
+  width: 600px;
 }
 @media screen and (min-width: 1280px) {
   .hero__img {
     display: block;
-    transform: translateY(60px);
+    transform: translateY(-110px);
   }
 }
 .hero__slider-header {

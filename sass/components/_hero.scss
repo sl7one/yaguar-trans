@@ -16,10 +16,11 @@
 
   &__img {
     display: none;
+    width: 600px;
 
     @include desktop {
       display: block;
-      transform: translateY(60px);
+      transform: translateY(-110px);
     }
   }
 
