@@ -1,7 +1,11 @@
 .hero {
-  background-image: url(../assets/hero-bg.jpg);
+  background-image: url(../assets/hero-bg-mob.jpg);
   background-size: cover;
   height: 625px;
+
+  @include desktop {
+    background-image: url(../assets/hero-bg.jpg);
+  }
 
   &__wrapper {
     display: flex;

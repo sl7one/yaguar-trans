@@ -352,9 +352,14 @@ button {
 }
 
 .hero {
-  background-image: url(../assets/hero-bg.jpg);
+  background-image: url(../assets/hero-bg-mob.jpg);
   background-size: cover;
   height: 625px;
+}
+@media screen and (min-width: 1280px) {
+  .hero {
+    background-image: url(../assets/hero-bg.jpg);
+  }
 }
 .hero__wrapper {
   display: flex;
