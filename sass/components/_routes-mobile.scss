@@ -1,5 +1,13 @@
 .routes-mobile {
   padding-left: 70px;
+  padding-bottom: 30px;
+  position: absolute;
+  left: 0;
+  z-index: 12;
+  background-color: var(--mainWhite);
+  width: 100%;
+  opacity: 0;
+  display: none;
 
   .back-button {
     background-color: transparent;
@@ -8,12 +16,7 @@
     display: inline-block;
 
     .icon-arrow-btn::before {
-      transition: var(--transition);
       font-size: 16px;
-    }
-
-    &:hover .icon-arrow-btn {
-      color: var(--mainAccent);
     }
   }
 
@@ -41,12 +44,23 @@
   }
 
   &__item {
-    transition: var(--transition);
     opacity: 0;
+  }
 
-    &:hover {
-      color: var(--secondaryAccent);
-      text-decoration: underline;
+  &__summary {
+    margin-top: 20px;
+    position: relative;
+    font-weight: 700;
+    display: inline-block;
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      height: 2px;
+      width: 100%;
+      background-color: black;
     }
   }
 }

@@ -1,0 +1,71 @@
+@font-face {
+  font-family: 'Onest';
+  src: url(./../fonts/Onest-Thin.woff) format('woff');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Onest';
+  src: url(./../fonts/Onest-Regular.woff) format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Onest';
+  src: url(./../fonts/Onest-Medium.woff) format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Onest';
+  src: url(./../fonts/Onest-Light.woff) format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Onest';
+  src: url(./../fonts/Onest-ExtraBold.woff) format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Onest';
+  src: url(./../fonts/Onest-Bold.woff) format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Onest';
+  src: url(./../fonts/Onest-Black.woff) format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Onest', sans-serif;
+  /* Встановлення шрифту Onest для body або інших елементів */
+}
+
+.wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.routes-container {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px;
+}
+
+.routes-item {
+  background-color: #ccc;
+  padding: 20px;
+  max-width: 308px;
+}

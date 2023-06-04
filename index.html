@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jaguar auto-trans</title>
+    <link rel="stylesheet" href="css/onest.css" />
     <link rel="stylesheet" href="css/icons.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
@@ -43,46 +44,30 @@
               <ul class="header__bottom-nav">
                 <li class="menu-item menu-item-has-children">
                   <a href="#" data="route"> Маршрути </a>
-                  <div class="dropdown sub-menu">
-                    <div class="dropdown__left">
-                      <h2 class="dropdown__header">В Польщу</h2>
-                      <div class="dropdown__list-wrapper">
-                        <ul class="dropdown__list">
-                          <li class="dropdown__item"><a href="#">Львів → Краків</a></li>
-                          <li class="dropdown__item"><a href="#">Львів → Краків (аеропорт)</a></li>
-                          <li class="dropdown__item"><a href="#">Львів → Бʼєльсько-Бʼяла</a></li>
-                          <li class="dropdown__item">
-                            <a href="#">Львів → Катовіце (аеропорт)</a>
-                          </li>
-                        </ul>
-                        <ul class="dropdown__list">
-                          <li class="dropdown__item"><a href="#">Львів → Ченстохова</a></li>
-                          <li class="dropdown__item"><a href="#">Львів → Лодзь</a></li>
-                          <li class="dropdown__item"><a href="#">Львів → Торунь</a></li>
-                          <li class="dropdown__item"><a href="#">Львів → Гданськ</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="dropdown__right">
-                      <h2 class="dropdown__header">В Україну</h2>
-                      <div class="dropdown__list-wrapper">
-                        <ul class="dropdown__list">
-                          <li class="dropdown__item"><a href="#">Краків → Львів</a></li>
-                          <li class="dropdown__item"><a href="#">Краків (аеропорт) → Львів</a></li>
-                          <li class="dropdown__item"><a href="#">Бʼєльсько-Бʼяла → Львів</a></li>
-                          <li class="dropdown__item">
-                            <a href="#">Катовіце (аеропорт) → Львів</a>
-                          </li>
-                        </ul>
-                        <ul class="dropdown__list">
-                          <li class="dropdown__item"><a href="#">Ченстохова → Львів</a></li>
-                          <li class="dropdown__item"><a href="#">Лодзь → Львів</a></li>
-                          <li class="dropdown__item"><a href="#">Торунь → Львів</a></li>
-                          <li class="dropdown__item"><a href="#">Гданськ → Львів</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
+                  <h2 class="dropdown__header">В Польщу</h2>
+                  <h2 class="dropdown__header">В Україну</h2>
+                  <ul class="dropdown sub-menu">
+                    <li class="dropdown__item"><a href="#">Львів → Краків</a></li>
+                    <li class="dropdown__item"><a href="#">Львів → Краків (аеропорт)</a></li>
+                    <li class="dropdown__item"><a href="#">Львів → Бʼєльсько-Бʼяла</a></li>
+                    <li class="dropdown__item">
+                      <a href="#">Львів → Катовіце (аеропорт)</a>
+                    </li>
+                    <li class="dropdown__item"><a href="#">Львів → Ченстохова</a></li>
+                    <li class="dropdown__item"><a href="#">Львів → Лодзь</a></li>
+                    <li class="dropdown__item"><a href="#">Львів → Торунь</a></li>
+                    <li class="dropdown__item"><a href="#">Львів → Гданськ</a></li>
+                    <li class="dropdown__item"><a href="#">Краків → Львів</a></li>
+                    <li class="dropdown__item"><a href="#">Краків (аеропорт) → Львів</a></li>
+                    <li class="dropdown__item"><a href="#">Бʼєльсько-Бʼяла → Львів</a></li>
+                    <li class="dropdown__item">
+                      <a href="#">Катовіце (аеропорт) → Львів</a>
+                    </li>
+                    <li class="dropdown__item"><a href="#">Ченстохова → Львів</a></li>
+                    <li class="dropdown__item"><a href="#">Лодзь → Львів</a></li>
+                    <li class="dropdown__item"><a href="#">Торунь → Львів</a></li>
+                    <li class="dropdown__item"><a href="#">Гданськ → Львів</a></li>
+                  </ul>
                 </li>
                 <li class="menu-item">
                   <a href="#"> Автопарк </a>
@@ -120,7 +105,7 @@
       <nav>
         <ul class="header-mobile__nav">
           <li class="menu-item">
-            <a href="./routes-mobile.html"> Маршрути </a>
+            <a href="#" data-route="mobile"> Маршрути </a>
           </li>
           <li class="menu-item">
             <a href="#"> Автопарк </a>
@@ -155,6 +140,44 @@
           <button class="header__button" type="button">+380 97 244 11 30</button>
         </div>
       </div>
+    </div>
+
+    <div class="routes-mobile">
+      <button class="back-button" type="button">
+        <div class="icon-arrow-btn"></div>
+      </button>
+
+      <div class="routes-mobile__first">
+        <h2 class="routes-mobile__header">В Польщу</h2>
+        <ul class="routes-mobile__list">
+          <li class="routes-mobile__item"><a href="#">Львів → Краків</a></li>
+          <li class="routes-mobile__item"><a href="#">Львів → Краків (аеропорт)</a></li>
+          <li class="routes-mobile__item"><a href="#">Львів → Бʼєльсько-Бʼяла</a></li>
+          <li class="routes-mobile__item">
+            <a href="#">Львів → Катовіце (аеропорт)</a>
+          </li>
+          <li class="routes-mobile__item"><a href="#">Львів → Ченстохова</a></li>
+          <li class="routes-mobile__item"><a href="#">Львів → Лодзь</a></li>
+          <li class="routes-mobile__item"><a href="#">Львів → Торунь</a></li>
+          <li class="routes-mobile__item"><a href="#">Львів → Гданськ</a></li>
+        </ul>
+      </div>
+      <div class="routes-mobile__second">
+        <h2 class="routes-mobile__header">В Україну</h2>
+        <ul class="routes-mobile__list">
+          <li class="routes-mobile__item"><a href="#">Краків → Львів</a></li>
+          <li class="routes-mobile__item"><a href="#">Краків (аеропорт) → Львів</a></li>
+          <li class="routes-mobile__item"><a href="#">Бʼєльсько-Бʼяла → Львів</a></li>
+          <li class="routes-mobile__item">
+            <a href="#">Катовіце (аеропорт) → Львів</a>
+          </li>
+          <li class="routes-mobile__item"><a href="#">Ченстохова → Львів</a></li>
+          <li class="routes-mobile__item"><a href="#">Лодзь → Львів</a></li>
+          <li class="routes-mobile__item"><a href="#">Торунь → Львів</a></li>
+          <li class="routes-mobile__item"><a href="#">Гданськ → Львів</a></li>
+        </ul>
+      </div>
+      <a class="routes-mobile__summary" href="#">Дивитися всі маршрути (16)</a>
     </div>
 
     <main>
@@ -207,6 +230,8 @@
                 </div>
               </div>
               <div class="swiper-pagination"></div>
+              <!-- <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div> -->
             </div>
             <img class="hero__img" src="./assets/bus.png" alt="bus" />
           </div>

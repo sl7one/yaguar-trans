@@ -1,19 +1,22 @@
 .dropdown {
   display: none;
-  gap: 140px;
-  padding: 30px;
+  padding: 100px 30px 30px 60px;
   opacity: 0;
   transition: var(--transition);
+  width: 1280px;
 
   position: absolute;
-  top: 170px;
+  top: 0;
   left: 0;
-  transform: translateX(50%);
   background-color: var(--mainWhite);
   z-index: 10;
 
   @include desktop {
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 16px;
+    height: 264px;
   }
 
   &__header {
@@ -22,6 +25,11 @@
     line-height: 1.3;
     color: var(--secondaryAccent);
     text-transform: uppercase;
+    position: absolute;
+    transition: var(--transition);
+    opacity: 0;
+    z-index: 12;
+    pointer-events: none;
   }
 
   &__list-wrapper {
@@ -37,10 +45,13 @@
   }
 
   &__item {
-    transition: var(--transition);
-    &:hover {
-      color: var(--secondaryAccent);
-      text-decoration: underline;
+    a {
+      transition: var(--transition);
+
+      &:hover {
+        color: var(--secondaryAccent);
+        text-decoration: underline;
+      }
     }
   }
 }

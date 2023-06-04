@@ -35,7 +35,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
     gap: 40px;
     padding-top: 50px;
     background-color: var(--mainWhite);
@@ -53,11 +52,7 @@
       gap: 16px;
 
       a {
-        transition: var(--transition);
         color: var(--secondaryAccent);
-        &:hover {
-          color: var(--mainAccent);
-        }
       }
     }
 
@@ -87,6 +82,9 @@
   &__footer {
     width: 100%;
     background-color: var(--secondaryAccent);
+    position: fixed;
+    bottom: 0;
+    left: 0;
 
     .container {
       padding: 15px;
@@ -137,11 +135,6 @@
       display: flex;
       gap: 8px;
       align-items: center;
-      transition: var(--transition);
-
-      &:hover {
-        color: var(--mainAccent);
-      }
     }
   }
 
@@ -165,23 +158,10 @@
     padding: 10px 14px;
     background-color: var(--mainWhite);
     color: var(--mainWhite);
-    transition: var(--transition);
     font-weight: 500;
 
     div::before {
       font-size: 14px;
-    }
-
-    &:hover {
-      transform: scale(1.1);
-    }
-  }
-
-  &__logo {
-    transition: var(--transition);
-
-    &:hover {
-      transform: scale(1.1);
     }
   }
 
@@ -190,6 +170,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 24px 0;
+    position: relative;
 
     .header__button {
       background-color: var(--mainAccent);
@@ -221,37 +202,18 @@
         margin: 0 3px;
       }
     }
-
-    a {
-      transition: var(--transition);
-      &:hover {
-        color: var(--mainAccent);
-      }
-    }
   }
 }
 
 .menu-item {
   a {
     padding: 34px 0;
-    transition: var(--transition);
-
-    &:hover {
-      color: var(--mainAccent);
-    }
   }
 }
 
 .social-links {
   display: flex;
   gap: 16px;
-
-  a {
-    transition: var(--transition);
-    &:hover {
-      color: var(--mainAccent);
-    }
-  }
 }
 
 .current-lang {

@@ -12,7 +12,6 @@
 body {
   background-color: var(--white);
   color: var(--primiry);
-  font-family: roboto, sans-serif;
   margin: 0;
 }
 
@@ -133,7 +132,6 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
   gap: 40px;
   padding-top: 50px;
   background-color: var(--mainWhite);
@@ -150,11 +148,7 @@ button {
   gap: 16px;
 }
 .header-mobile__menu .social-links a {
-  transition: var(--transition);
   color: var(--secondaryAccent);
-}
-.header-mobile__menu .social-links a:hover {
-  color: var(--mainAccent);
 }
 .header-mobile__menu .header__button {
   color: var(--mainWhite);
@@ -178,6 +172,9 @@ button {
 .header-mobile__footer {
   width: 100%;
   background-color: var(--secondaryAccent);
+  position: fixed;
+  bottom: 0;
+  left: 0;
 }
 .header-mobile__footer .container {
   padding: 15px;
@@ -223,10 +220,6 @@ button {
   display: flex;
   gap: 8px;
   align-items: center;
-  transition: var(--transition);
-}
-.header__address a:hover {
-  color: var(--mainAccent);
 }
 .header__top-right-wrap {
   display: flex;
@@ -246,26 +239,17 @@ button {
   padding: 10px 14px;
   background-color: var(--mainWhite);
   color: var(--mainWhite);
-  transition: var(--transition);
   font-weight: 500;
 }
 .header__button div::before {
   font-size: 14px;
-}
-.header__button:hover {
-  transform: scale(1.1);
-}
-.header__logo {
-  transition: var(--transition);
-}
-.header__logo:hover {
-  transform: scale(1.1);
 }
 .header__bottom {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 24px 0;
+  position: relative;
 }
 .header__bottom .header__button {
   background-color: var(--mainAccent);
@@ -290,30 +274,14 @@ button {
   content: "/";
   margin: 0 3px;
 }
-.lang-switcher li a {
-  transition: var(--transition);
-}
-.lang-switcher li a:hover {
-  color: var(--mainAccent);
-}
 
 .menu-item a {
   padding: 34px 0;
-  transition: var(--transition);
-}
-.menu-item a:hover {
-  color: var(--mainAccent);
 }
 
 .social-links {
   display: flex;
   gap: 16px;
-}
-.social-links a {
-  transition: var(--transition);
-}
-.social-links a:hover {
-  color: var(--mainAccent);
 }
 
 .current-lang {
@@ -422,20 +390,23 @@ button {
 
 .dropdown {
   display: none;
-  gap: 140px;
-  padding: 30px;
+  padding: 100px 30px 30px 60px;
   opacity: 0;
   transition: var(--transition);
+  width: 1280px;
   position: absolute;
-  top: 170px;
+  top: 0;
   left: 0;
-  transform: translateX(50%);
   background-color: var(--mainWhite);
   z-index: 10;
 }
 @media screen and (min-width: 1280px) {
   .dropdown {
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 16px;
+    height: 264px;
   }
 }
 .dropdown__header {
@@ -444,6 +415,11 @@ button {
   line-height: 1.3;
   color: var(--secondaryAccent);
   text-transform: uppercase;
+  position: absolute;
+  transition: var(--transition);
+  opacity: 0;
+  z-index: 12;
+  pointer-events: none;
 }
 .dropdown__list-wrapper {
   display: flex;
@@ -455,16 +431,24 @@ button {
   flex-direction: column;
   gap: 16px;
 }
-.dropdown__item {
+.dropdown__item a {
   transition: var(--transition);
 }
-.dropdown__item:hover {
+.dropdown__item a:hover {
   color: var(--secondaryAccent);
   text-decoration: underline;
 }
 
 .routes-mobile {
   padding-left: 70px;
+  padding-bottom: 30px;
+  position: absolute;
+  left: 0;
+  z-index: 12;
+  background-color: var(--mainWhite);
+  width: 100%;
+  opacity: 0;
+  display: none;
 }
 .routes-mobile .back-button {
   background-color: transparent;
@@ -473,11 +457,7 @@ button {
   display: inline-block;
 }
 .routes-mobile .back-button .icon-arrow-btn::before {
-  transition: var(--transition);
   font-size: 16px;
-}
-.routes-mobile .back-button:hover .icon-arrow-btn {
-  color: var(--mainAccent);
 }
 .routes-mobile__header {
   font-size: 16px;
@@ -499,10 +479,21 @@ button {
   margin-top: 16px;
 }
 .routes-mobile__item {
-  transition: var(--transition);
   opacity: 0;
 }
-.routes-mobile__item:hover {
-  color: var(--secondaryAccent);
-  text-decoration: underline;
+.routes-mobile__summary {
+  margin-top: 20px;
+  position: relative;
+  font-weight: 700;
+  display: inline-block;
+}
+.routes-mobile__summary::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: black;
 }/*# sourceMappingURL=main.css.map */
