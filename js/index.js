@@ -1,26 +1,42 @@
 import refs from './utils/refs.js';
 
 const dropDownList = refs.dropDown.querySelectorAll('li');
-const { top: topPositionForFirstTitle } = dropDownList[0].getBoundingClientRect();
-const { top: topPositionForSecondTitle } = dropDownList[8].getBoundingClientRect();
+
+for (let i = 8; i <= 11; i++) {
+  dropDownList[i].style.marginLeft = 140 + 'px';
+}
 
 refs.dropDownHeaders[0].style.left = 60 + 'px';
-refs.dropDownHeaders[0].style.top = topPositionForFirstTitle - 25 + 'px';
-refs.dropDownHeaders[1].style.left = 660 + 'px';
-refs.dropDownHeaders[1].style.top = topPositionForSecondTitle - 25 + 'px';
+refs.dropDownHeaders[0].style.top = 130 + 'px';
+refs.dropDownHeaders[1].style.left = 660 + 70 + 'px';
+refs.dropDownHeaders[1].style.top = 130 + 'px';
 
 const { height } = refs.bottomHeader.getBoundingClientRect();
 refs.dropDown.style.top = height + 'px';
 
 const onHover = () => {
-  refs.dropDown.style.opacity = 1;
-  refs.dropDownHeaders[0].style.opacity = 1;
-  refs.dropDownHeaders[1].style.opacity = 1;
+  console.log('hover');
+
+  for (let el of refs.dropDownHeaders) {
+    el.style.display = 'block';
+  }
+  gsap.to(refs.dropDown, {
+    opacity: 1,
+    onStart: () => (refs.dropDown.style.display = 'flex'),
+  });
 };
 const onLeave = () => {
-  refs.dropDown.style.opacity = 0;
-  refs.dropDownHeaders[0].style.opacity = 0;
-  refs.dropDownHeaders[1].style.opacity = 0;
+  console.log('leave');
+  for (let el of refs.dropDownHeaders) {
+    el.style.display = 'none';
+  }
+  gsap.to(refs.dropDown, {
+    opacity: 0,
+    onComplete: () => {
+      refs.dropDown.style.display = 'none';
+      refs.link.addEventListener('mouseenter', onHover, { once: true });
+    },
+  });
 };
 const onClickBurger = () => {
   if (refs.burgerBtn.classList.contains('opened')) {
@@ -68,7 +84,7 @@ const onClickRouteRout = () => {
 };
 
 refs.burgerBtn.addEventListener('click', onClickBurger);
-refs.link.addEventListener('mouseenter', onHover);
+refs.link.addEventListener('mouseenter', onHover, { once: true });
 refs.dropDown.addEventListener('mouseleave', onLeave);
 refs.backButton.addEventListener('click', onClickBackButton);
 refs.routeRout.addEventListener('click', onClickRouteRout);
