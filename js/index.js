@@ -15,7 +15,7 @@ const { height } = refs.bottomHeader.getBoundingClientRect();
 refs.dropDown.style.top = 70 + 'px';
 
 const onHover = () => {
-  console.log('hover');
+  // console.log('hover');
 
   for (let el of refs.dropDownHeaders) {
     el.style.display = 'block';
@@ -26,7 +26,7 @@ const onHover = () => {
   });
 };
 const onLeave = () => {
-  console.log('leave');
+  // console.log('leave');
   for (let el of refs.dropDownHeaders) {
     el.style.display = 'none';
   }

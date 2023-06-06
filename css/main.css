@@ -244,9 +244,6 @@ button {
 .header__button div::before {
   font-size: 14px;
 }
-
-/* Изменения */
-
 .header__bottom {
   display: none;
   align-items: center;
@@ -262,9 +259,6 @@ button {
     display: flex;
   }
 }
-
-/* ------------- */
-/* Изменения */
 .header__bottom .container {
   display: flex;
   align-items: center;
@@ -272,7 +266,6 @@ button {
   width: 100%;
   position: relative;
 }
-/* -------------- */
 .header__bottom .header__button {
   background-color: var(--mainAccent);
 }
@@ -293,7 +286,7 @@ button {
   text-transform: uppercase;
 }
 .lang-switcher li:first-of-type::after {
-  content: '/';
+  content: "/";
   margin: 0 3px;
 }
 
@@ -315,8 +308,6 @@ button {
   font-weight: 700;
 }
 
-/* Изменения */
-
 .hero {
   background-image: url(../assets/hero-bg-mob.jpg);
   background-size: cover;
@@ -325,8 +316,6 @@ button {
   color: var(--mainWhite);
   transition: var(--transition);
 }
-
-/* ----------------- */
 @media screen and (min-width: 1280px) {
   .hero {
     background-image: url(../assets/hero-bg.jpg);
@@ -426,8 +415,6 @@ button {
   background-color: var(--mainWhite);
   z-index: 10;
 }
-
-
 @media screen and (min-width: 1280px) {
   .dropdown {
     display: flex;
@@ -437,8 +424,6 @@ button {
     height: 264px;
   }
 }
-
-/* ----------------- */
 .dropdown__header {
   font-size: 20px;
   font-weight: 700;
@@ -517,10 +502,8 @@ button {
   font-weight: 700;
   display: inline-block;
 }
-
-/* Изменения */
 .routes-mobile__summary::before {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   bottom: -5px;
@@ -528,7 +511,4 @@ button {
   height: 2px;
   width: 100%;
   background-color: black;
-}
-/* --------------- */
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
