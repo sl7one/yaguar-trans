@@ -2,7 +2,6 @@
   display: none;
   padding: 100px 30px 30px 60px;
   opacity: 0;
-  // transition: var(--transition);
   width: 1280px;
 
   position: absolute;
@@ -12,7 +11,7 @@
   z-index: 10;
 
   @include desktop {
-    display: none;
+    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     gap: 16px;
@@ -27,7 +26,6 @@
     text-transform: uppercase;
     position: absolute;
     transition: var(--transition);
-    // opacity: 0;
     display: none;
     z-index: 12;
     pointer-events: none;

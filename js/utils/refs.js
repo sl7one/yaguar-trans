@@ -10,6 +10,7 @@ export const ref = {
   routesListFirst: document.querySelector('.routes-mobile__first').querySelectorAll('li'),
   routesListSecond: document.querySelector('.routes-mobile__second').querySelectorAll('li'),
   routeRout: document.querySelector('[data-route="mobile"]'),
+  heroBg: document.querySelector('.hero'),
 };
 
 export default ref;

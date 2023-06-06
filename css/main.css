@@ -244,13 +244,35 @@ button {
 .header__button div::before {
   font-size: 14px;
 }
+
+/* Изменения */
+
 .header__bottom {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: space-between;
   padding: 24px 0;
+  position: sticky;
+  top: 0;
+  background-color: var(--mainWhite);
+  z-index: 13;
+}
+@media screen and (min-width: 1280px) {
+  .header__bottom {
+    display: flex;
+  }
+}
+
+/* ------------- */
+/* Изменения */
+.header__bottom .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
   position: relative;
 }
+/* -------------- */
 .header__bottom .header__button {
   background-color: var(--mainAccent);
 }
@@ -271,7 +293,7 @@ button {
   text-transform: uppercase;
 }
 .lang-switcher li:first-of-type::after {
-  content: "/";
+  content: '/';
   margin: 0 3px;
 }
 
@@ -293,13 +315,18 @@ button {
   font-weight: 700;
 }
 
+/* Изменения */
+
 .hero {
   background-image: url(../assets/hero-bg-mob.jpg);
   background-size: cover;
   background-position: center;
   height: 625px;
   color: var(--mainWhite);
+  transition: var(--transition);
 }
+
+/* ----------------- */
 @media screen and (min-width: 1280px) {
   .hero {
     background-image: url(../assets/hero-bg.jpg);
@@ -399,15 +426,19 @@ button {
   background-color: var(--mainWhite);
   z-index: 10;
 }
+
+
 @media screen and (min-width: 1280px) {
   .dropdown {
-    display: none;
+    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     gap: 16px;
     height: 264px;
   }
 }
+
+/* ----------------- */
 .dropdown__header {
   font-size: 20px;
   font-weight: 700;
@@ -486,8 +517,10 @@ button {
   font-weight: 700;
   display: inline-block;
 }
+
+/* Изменения */
 .routes-mobile__summary::before {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   bottom: -5px;
@@ -495,4 +528,7 @@ button {
   height: 2px;
   width: 100%;
   background-color: black;
-}/*# sourceMappingURL=main.css.map */
+}
+/* --------------- */
+
+/*# sourceMappingURL=main.css.map */

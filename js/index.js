@@ -7,12 +7,12 @@ for (let i = 8; i <= 11; i++) {
 }
 
 refs.dropDownHeaders[0].style.left = 60 + 'px';
-refs.dropDownHeaders[0].style.top = 130 + 'px';
+refs.dropDownHeaders[0].style.top = 110 + 'px';
 refs.dropDownHeaders[1].style.left = 660 + 70 + 'px';
-refs.dropDownHeaders[1].style.top = 130 + 'px';
+refs.dropDownHeaders[1].style.top = 110 + 'px';
 
 const { height } = refs.bottomHeader.getBoundingClientRect();
-refs.dropDown.style.top = height + 'px';
+refs.dropDown.style.top = 70 + 'px';
 
 const onHover = () => {
   console.log('hover');

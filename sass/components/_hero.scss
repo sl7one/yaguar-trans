@@ -4,6 +4,9 @@
   background-position: center;
   height: 625px;
   color: var(--mainWhite);
+  // добавить
+  transition: var(--transition);
+  // --------
 
   @include desktop {
     background-image: url(../assets/hero-bg.jpg);

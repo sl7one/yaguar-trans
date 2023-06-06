@@ -166,11 +166,26 @@
   }
 
   &__bottom {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: space-between;
     padding: 24px 0;
-    position: relative;
+    position: sticky;
+    top: 0;
+    background-color: var(--mainWhite);
+    z-index: 13;
+
+    @include desktop {
+      display: flex;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      position: relative;
+    }
 
     .header__button {
       background-color: var(--mainAccent);
