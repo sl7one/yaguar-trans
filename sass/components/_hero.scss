@@ -1,11 +1,12 @@
 .hero {
-  background-image: url(../assets/hero-bg-mob.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 625px;
+  // background-image: url(../assets/hero-bg-mob.jpg);
+  // background-size: cover;
+  // background-position: center;
+  // height: 625px;
   color: var(--mainWhite);
   // добавить
   transition: var(--transition);
+  position: relative;
   // --------
 
   @include desktop {
@@ -24,6 +25,10 @@
     @include desktop {
       display: block;
       transform: translateY(120px);
+      position: absolute;
+      bottom: 0;
+      right: 50px;
+      z-index: 12;
     }
   }
 
@@ -96,5 +101,9 @@
     span {
       font-weight: 900;
     }
+  }
+
+  .container {
+    position: relative;
   }
 }

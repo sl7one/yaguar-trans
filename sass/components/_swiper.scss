@@ -1,11 +1,16 @@
 .swiper {
-  width: 300px;
+  width: 100%;
   height: 350px;
 
   @include desktop {
-    width: 650px;
-    height: 400px;
+    // width: 100%;
+    height: 625px;
   }
+}
+
+.swiper-content {
+  width: 570px;
+  padding-top: 93px;
 }
 
 .swiper-pagination {
@@ -16,6 +21,7 @@
 
   @include desktop {
     width: unset !important;
+    margin-bottom: 100px;
   }
 }
 
