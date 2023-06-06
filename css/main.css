@@ -67,7 +67,7 @@ button {
 
 .swiper {
   width: 100%;
-  height: 350px;
+  height: 520px;
 }
 @media screen and (min-width: 1280px) {
   .swiper {
@@ -76,8 +76,19 @@ button {
 }
 
 .swiper-content {
-  width: 570px;
-  padding-top: 93px;
+  padding-top: 110px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+@media screen and (min-width: 1280px) {
+  .swiper-content {
+    width: 570px;
+    padding-top: 93px;
+    align-items: unset;
+  }
 }
 
 .swiper-pagination {
@@ -85,6 +96,7 @@ button {
   gap: 24px !important;
   justify-content: center !important;
   align-items: center !important;
+  margin-bottom: 60px;
 }
 @media screen and (min-width: 1280px) {
   .swiper-pagination {
@@ -368,10 +380,12 @@ button {
   display: flex;
   gap: 50px;
   margin-top: 30px;
+  width: 278px;
 }
 @media screen and (min-width: 1280px) {
   .hero__slider-info-wrapper {
     gap: 70px;
+    width: unset;
   }
 }
 .hero__slider-info-meta-header {

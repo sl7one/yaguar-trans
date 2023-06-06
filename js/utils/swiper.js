@@ -1,9 +1,8 @@
 import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js';
-// import refs from './refs.js';
 
 const swiper = new Swiper('.swiper', {
   direction: 'horizontal',
-  speed: 1500,
+  speed: 750,
   // effect: 'fade',
   effect: 'slide',
   autoplay: {

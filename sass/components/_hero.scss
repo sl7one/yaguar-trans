@@ -4,7 +4,6 @@
   // background-position: center;
   // height: 625px;
   color: var(--mainWhite);
-  // добавить
   transition: var(--transition);
   position: relative;
   // --------
@@ -65,9 +64,11 @@
     display: flex;
     gap: 50px;
     margin-top: 30px;
+    width: 278px;
 
     @include desktop {
       gap: 70px;
+      width: unset;
     }
   }
 
