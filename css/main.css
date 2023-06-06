@@ -318,11 +318,6 @@ button {
   transition: var(--transition);
   position: relative;
 }
-@media screen and (min-width: 1280px) {
-  .hero {
-    background-image: url(../assets/hero-bg.jpg);
-  }
-}
 .hero__wrapper {
   display: flex;
   padding-top: 100px;
